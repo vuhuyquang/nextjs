@@ -22,3 +22,16 @@
 #banner {
   height: calc(100vh - 76px) !important;
 }
+
+.title-intro {
+  line-height: 1.6;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.content-intro {
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 2;
+  letter-spacing: 2.5 !important;
+}
