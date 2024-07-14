@@ -13,14 +13,14 @@ import {
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md flex items-center justify-between px-10 py-2 h-[76px] text-sm z-10">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md flex items-center justify-between px-4 sm:px-4 md:px-6 lg:px-8 xl:px-10  py-2 h-[76px] text-sm z-10">
       {/* Profile section */}
       <div className="flex items-center gap-4 cursor-pointer">
         <Image
           className="border-solid border-2 border-[#e84118] p-[1px] rounded-full h-[44px] w-[44px]"
           height={44}
           width={44}
-          src="https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png"
+          src="/images/front_face.png"
           alt="avatar"
         />
         <div className="grid grid-rows-2 gap-1">

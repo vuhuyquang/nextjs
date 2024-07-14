@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Header></Header>
-        <main className="container mx-auto w-screen max-w-full py-[76px] content-custom">
+        <main className="container mx-auto w-screen max-w-full pt-[76px]">
           {children}
         </main>
         <Footer></Footer>
