@@ -32,25 +32,25 @@ export default function Header() {
               content={
                 <div className="flex flex-col gap-3">
                   <div className="flex gap-1">
-                    <ShoppingFilled className="mt-1" />
+                    <ShoppingFilled />
                     <p>
                       Làm việc tại <span className="font-bold">Giaohangtietkiem.vn</span>
                     </p>
                   </div>
                   <div className="flex gap-1">
-                    <HomeFilled className="mt-1" />
+                    <HomeFilled />
                     <p>
                       Sống tại <span className="font-bold">Hà Nội</span>
                     </p>
                   </div>
                   <div className="flex gap-1">
-                    <EnvironmentFilled className="mt-1" />
+                    <EnvironmentFilled />
                     <p>
                       Đến từ <span className="font-bold">Thái Bình</span>
                     </p>
                   </div>
                   <div className="flex gap-1">
-                    <HeartFilled className="mt-1" />
+                    <HeartFilled />
                     <p>Độc thân</p>
                   </div>
                 </div>
