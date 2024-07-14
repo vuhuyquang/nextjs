@@ -33,8 +33,12 @@ export default function Footer() {
         </div>
         {/* Liên hệ */}
         <div>
-          <h3 className="font-normal mb-4">Liên hệ</h3>
-          <input placeholder="Nhập email của bạn" className="mb-2 text-sm" />
+          <h3 className="font-normal mb-4">Bạn có câu hỏi</h3>
+          <ul>
+            <li><a href="#" className="text-gray-400 hover:text-white text-sm">Nam Từ Liêm, Hà Nội</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white text-sm">+84 34 439 6798</a></li>
+            <li><a href="#" className="text-gray-400 hover:text-white text-sm">quangvh.technical@gmail.com</a></li>
+          </ul>
         </div>
       </div>
     </footer>
