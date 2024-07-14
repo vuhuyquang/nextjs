@@ -23,7 +23,7 @@ export default function RootLayout({
         <main className="container mx-auto w-screen max-w-full pt-[76px]">
           {children}
         </main>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </body>
     </html>
   );
