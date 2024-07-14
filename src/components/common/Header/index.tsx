@@ -61,7 +61,7 @@ export default function Header() {
             <span className="flex items-center ml-[3px]">
               <CaretDownOutlined style={{ fontSize: '10px' }} />
             </span>
-            <Link href={"fb://profile/homie210"} target="_blank" rel="noopener noreferrer">
+            <Link href={"fb.com/homie210"} target="_blank" rel="noopener noreferrer">
               <span className="ml-1 text-slate-500">Theo dõi</span>
             </Link>
           </div>
