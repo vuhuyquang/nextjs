@@ -35,3 +35,33 @@
   line-height: 2;
   letter-spacing: 2.5 !important;
 }
+
+.service-item:hover {
+  background-color: #fdcb6e;
+  transform: scale(1.02);
+  transition: transform 0.5s ease;
+}
+
+.service-item {
+  max-height: 421.91px;
+}
+
+.service-name {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media (min-width: 1424px) {
+  .container-service {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1425px) {
+  .container-service {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
