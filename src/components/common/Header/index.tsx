@@ -77,7 +77,7 @@ export default function Header() {
                 <Link href="/">TRANG CHỦ</Link>
               </li>
               <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
-                <Link href="/bai-viet/tren-tay-reverb-official-websocket-server-tu-laravel">
+                <Link href="/bai-viet">
                   BÀI VIẾT
                 </Link>
               </li>

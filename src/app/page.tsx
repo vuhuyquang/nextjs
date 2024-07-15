@@ -2,7 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import "@/app/styles.scss";
 
-export default function Banner() {
+export default function Home() {
   return (
     <>
       <div id="banner" className="min-h-screen w-full m-0 p-0 flex flex-col">
