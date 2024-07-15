@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "@/assets/scss/app.scss";
-import Header from "@/components/common/Header";
+import HeaderClient from "@/components/common/HeaderClient";
 import Footer from "@/components/common/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Blog cá nhân",
-  description: "Đây là blog cá nhân của tôi, nơi tôi chia sẻ về cuộc sống, công nghệ và những điều thú vị.",
+  title: "Nice to meet you :vv",
+  description: "Đây là blog cá nhân của tui, nơi chia sẻ về cuộc sống, công nghệ và những điều thú vị.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header></Header>
+        <HeaderClient></HeaderClient>
         <main className="container mx-auto w-screen max-w-full pt-[76px]">
           {children}
         </main>
