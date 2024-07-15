@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Popover } from 'antd';
+import { Popover, Drawer, Button } from 'antd';
 import {
   ShoppingFilled,
   HomeFilled,
@@ -12,8 +12,18 @@ import {
 } from '@ant-design/icons';
 
 export default function Header() {
+  const [visible, setVisible] = useState(false);
+
+  const showDrawer = () => {
+    setVisible(true);
+  };
+
+  const onClose = () => {
+    setVisible(false);
+  };
+
   return (
-    <header className="fixed top-0 left-0 w-full bg-white shadow-md flex items-center justify-between px-4 sm:px-4 md:px-6 lg:px-8 xl:px-10  py-2 h-[76px] text-sm z-10">
+    <header className="fixed top-0 left-0 w-full bg-white shadow-md flex items-center justify-between px-4 py-2 h-[76px] text-sm z-10">
       {/* Profile section */}
       <div className="flex items-center gap-4 cursor-pointer">
         <Image
@@ -71,15 +81,13 @@ export default function Header() {
       {/* Navigation section */}
       <nav className="flex justify-end items-center cursor-pointer flex-grow text-xs">
         <div className="font-semibold tracking-[2px]">
-          <div className="hidden sm:hidden md:hidden lg:flex">
+          <div className="hidden lg:flex">
             <ul className="flex gap-[3rem]">
               <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
                 <Link href="/">TRANG CHỦ</Link>
               </li>
               <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
-                <Link href="/bai-viet">
-                  BÀI VIẾT
-                </Link>
+                <Link href="/bai-viet">BÀI VIẾT</Link>
               </li>
               <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
                 <Link href="/lien-he">LIÊN HỆ</Link>
@@ -87,10 +95,25 @@ export default function Header() {
             </ul>
           </div>
           <div className="lg:hidden flex items-center">
-            <MenuOutlined className="text-base" />
+            <Button type="text" onClick={showDrawer} icon={<MenuOutlined />} />
           </div>
         </div>
       </nav>
+
+      {/* Drawer for mobile */}
+      <Drawer title="Menu" placement="right" onClose={onClose} visible={visible}>
+        <ul className="flex flex-col">
+          <li className="py-2">
+            <Link href="/" onClick={onClose}>TRANG CHỦ</Link>
+          </li>
+          <li className="py-2">
+            <Link href="/bai-viet" onClick={onClose}>BÀI VIẾT</Link>
+          </li>
+          <li className="py-2">
+            <Link href="/lien-he" onClick={onClose}>LIÊN HỆ</Link>
+          </li>
+        </ul>
+      </Drawer>
     </header>
   );
-};
+}
