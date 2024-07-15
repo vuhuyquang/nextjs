@@ -4,21 +4,23 @@ import "@/app/styles.scss";
 
 export default function Banner() {
   return (
-    <><div id="banner" className="h-screen w-full m-0 p-0 flex flex-col">
-      <h1 className="text-center text-white project-name">Quag</h1>
-      <div className="flex h-full w-full opacity-95">
-        <div className="relative w-1/2 h-full"> {/* Div chứa hình ảnh */}
-          <Image
-            className="object-cover"
-            src="https://images.pexels.com/photos/210017/pexels-photo-210017.jpeg?auto=compress&cs=tinysrgb&w=650&h=700&dpr=10"
-            alt="Ảnh"
-            fill // Sử dụng fill
-            style={{ objectFit: 'cover' }} // Sử dụng style cho objectFit
-          />
+    <>
+      <div id="banner" className="min-h-screen w-full m-0 p-0 flex flex-col">
+        <h1 className="text-center text-white project-name">Quag</h1>
+        <div className="flex h-full w-full opacity-95">
+          <div className="relative w-full md:w-1/2 h-full"> {/* Div chứa hình ảnh */}
+            <Image
+              className="object-cover"
+              src="https://images.pexels.com/photos/210017/pexels-photo-210017.jpeg?auto=compress&cs=tinysrgb&w=650&h=700&dpr=10"
+              alt="Ảnh"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </div>
+          <div className="hidden md:block w-1/2 bg-black"></div>
         </div>
-        <div className="w-1/2 bg-black"></div>
       </div>
-    </div><div className={`container mx-auto px-4 h-screen`}>
+      <div className="container mx-auto px-4 py-8 md:py-16">
         <div className="flex justify-end flex-col md:flex-row h-full">
           <div className="w-full md:w-8/12 flex flex-col items-center justify-center">
             <h2 className="title-intro text-4xl md:text-6xl font-bold mb-5">
