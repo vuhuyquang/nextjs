@@ -62,10 +62,14 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
             alt="avatar"
             loading="lazy"
           />
-          <span className="text-gray-800 text-sm md:text-base">{post.author}</span>
+          <div className="text-[10px] lg:text-[12px] xl:text-[14px] text-[#475467] line-clamp-2">
+          {post.author}
+          </div>
         </div>
-        <div className="flex items-center gap-4 text-gray-500 text-xs md:text-sm">
-          <span className="rounded-full bg-gray-200 px-2 py-1">{post.category}</span>
+        <div className="flex justify-start gap-5 text-[#979797] items-center text-[7px] lg:text-[8px] xl:text-[10px]">
+          <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">
+            {post.category}
+          </span>
           <span>{post.createdAt}</span>
           <span>{post.readingTime}</span>
         </div>
