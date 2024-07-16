@@ -46,29 +46,31 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div className="max-w-[54rem] mx-auto p-5">
-      <h1 style={{ lineHeight: '1.1', letterSpacing: '-1px' }} className="mb-5 text-[3rem] font-bold tracking-tighter text-[#2c3440] hover:text-[#000000cc] transition delay-[45ms] cursor-pointer">{post.title}</h1>
-      <p style={{ letterSpacing: '-.5px' }} className="mb-5 text-[#475467] text-[1.5rem] font-normal">{post.shortContent}</p>
-      <img className="w-full mb-5 rounded-2xl" src={post.imageUrl} alt={post.title} loading="lazy" />
+    <div className="max-w-3xl mx-auto p-5">
+      <h1 className="mb-5 text-3xl md:text-4xl font-bold tracking-tight text-gray-800 hover:text-gray-900 transition duration-300 cursor-pointer">
+        {post.title}
+      </h1>
+      <p className="mb-5 text-lg md:text-xl text-gray-600">{post.shortContent}</p>
+      <img className="w-full mb-5 rounded-lg" src={post.imageUrl} alt={post.title} loading="lazy" />
       <div className="mb-5 flex items-center justify-between">
-        <div className="flex justify-between gap-2 items-center">
+        <div className="flex items-center gap-2">
           <Image
             height={26}
             width={26}
-            className="rounded-2xl"
+            className="rounded-full"
             src={post.authorAvatar}
             alt="avatar"
             loading="lazy"
           />
-          <span className="text-[#292929] text-[10px] lg:text-sm xl:text-sm">{post.author}</span>
+          <span className="text-gray-800 text-sm md:text-base">{post.author}</span>
         </div>
-        <div className="flex justify-between gap-5 text-[#979797] items-center text-[10px] lg:text-sm xl:text-sm">
-          <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">{post.category}</span>
+        <div className="flex items-center gap-4 text-gray-500 text-xs md:text-sm">
+          <span className="rounded-full bg-gray-200 px-2 py-1">{post.category}</span>
           <span>{post.createdAt}</span>
           <span>{post.readingTime}</span>
         </div>
       </div>
-      <div className='text-[#475467] mb-5 text-[1.25rem] leading-relaxed'>{post.fullContent}</div>
+      <div className="text-gray-700 mb-5 text-lg leading-relaxed">{post.fullContent}</div>
     </div>
   );
 };
