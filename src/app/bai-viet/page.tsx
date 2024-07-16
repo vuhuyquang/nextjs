@@ -15,7 +15,7 @@ export default function Blog() {
               <img
                 className={`h-full w-full rounded-l-lg lg:rounded-l-2xl ${styles["zoom-on-hover"]}`}
                 src="https://www.chase.co.uk/gb/en/static/content/dam/chaseweb/gb/en/images/hub-articles/2023/may/article-hero-desktop-badhabitscost-1396817125.jpg"
-                alt="image" loading="lazy"
+                alt="image"
               />
             </div>
             <div className="w-full lg:w-5/12 rounded-r-lg lg:rounded-r-2xl px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 py-[1.5rem] flex flex-col gap-5 lg:gap-10 shadow-lg">

@@ -46,7 +46,7 @@ export default function PostDetail({ params }: { params: { slug: string } }) {
         {post.title}
       </h1>
       <p className="mb-5 text-lg md:text-xl text-gray-600">{post.shortContent}</p>
-      <img className="w-full mb-5 rounded-lg" src={post.imageUrl} alt={post.title} loading="lazy" />
+      <img className="w-full mb-5 rounded-lg" src={post.imageUrl} alt={post.title} />
       <div className="mb-5 flex items-center justify-between">
         <div className="flex justify-between gap-2 items-center xl:flex">
           <Image
