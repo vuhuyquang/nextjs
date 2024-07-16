@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 // import { formatDate, getListPost } from "@/utils";
-import styles from "@/styles/PostList.module.scss";
+import styles from "@/styles/bai-viet.module.scss";
 
 interface Post {
   id: number;
@@ -36,7 +36,7 @@ export default function Blog() {
         <div className="flex flex-col lg:flex-row cursor-pointer mb-6 h-[500px]">
           <div className="w-full lg:w-7/12 bg-yellow-100 rounded-l-lg lg:rounded-l-2xl shadow-lg mb-6 lg:mb-0 overflow-hidden h-auto">
             <img
-              className="h-full w-full rounded-l-lg lg:rounded-l-2xl zoom-on-hover"
+              className={`h-full w-full rounded-l-lg lg:rounded-l-2xl ${styles["zoom-on-hover"]}`}
               src="https://www.chase.co.uk/gb/en/static/content/dam/chaseweb/gb/en/images/hub-articles/2023/may/article-hero-desktop-badhabitscost-1396817125.jpg"
               alt="image"
             />
@@ -72,7 +72,7 @@ export default function Blog() {
           <div key={1} className="flex flex-col cursor-pointer gap-3 p-4 border-2 border-gray-100 rounded-3xl">
             <div className="h-auto max-h-56 overflow-hidden rounded-2xl">
               <img
-                className="h-full w-full zoom-on-hover rounded-2xl"
+                className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w1000/2022/12/livewire-and-recaptcha-v3.jpg"
                 alt="image"
               />
@@ -96,7 +96,7 @@ export default function Blog() {
           <div key={2} className="flex flex-col cursor-pointer gap-3 p-4 border-2 border-gray-100 rounded-3xl">
             <div className="h-auto max-h-56 overflow-hidden rounded-2xl">
               <img
-                className="h-full w-full zoom-on-hover rounded-2xl"
+                className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w2000/2023/01/TALL.jpg"
                 alt="image"
               />
@@ -120,7 +120,7 @@ export default function Blog() {
           <div key={3} className="flex flex-col cursor-pointer gap-3 p-4 border-2 border-gray-100 rounded-3xl">
             <div className="h-auto max-h-56 overflow-hidden rounded-2xl">
               <img
-                className="h-full w-full zoom-on-hover rounded-2xl"
+                className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w1000/2022/12/laravel-10.jpg"
                 alt="image"
               />

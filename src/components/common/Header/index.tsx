@@ -12,14 +12,14 @@ import {
 } from '@ant-design/icons';
 
 export default function Header() {
-  const [visible, setVisible] = useState(false);
+  const [open, setOpen] = useState(false);  // Change variable name from visible to open
 
   const showDrawer = () => {
-    setVisible(true);
+    setOpen(true);  // Use setOpen instead of setVisible
   };
 
   const onClose = () => {
-    setVisible(false);
+    setOpen(false);  // Use setOpen instead of setVisible
   };
 
   return (
@@ -101,7 +101,7 @@ export default function Header() {
       </nav>
 
       {/* Drawer for mobile */}
-      <Drawer title="Menu" placement="right" onClose={onClose} visible={visible}>
+      <Drawer title="Menu" placement="right" onClose={onClose} open={open}>
         <ul className="flex flex-col">
           <li className="py-2">
             <Link href="/" onClick={onClose}>TRANG CHỦ</Link>
