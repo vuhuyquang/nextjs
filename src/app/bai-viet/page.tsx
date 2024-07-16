@@ -38,11 +38,11 @@ export default function Blog() {
             <img
               className={`h-full w-full rounded-l-lg lg:rounded-l-2xl ${styles["zoom-on-hover"]}`}
               src="https://www.chase.co.uk/gb/en/static/content/dam/chaseweb/gb/en/images/hub-articles/2023/may/article-hero-desktop-badhabitscost-1396817125.jpg"
-              alt="image"
+              alt="image" loading="lazy"
             />
           </div>
           <div className="w-full lg:w-5/12 rounded-r-lg lg:rounded-r-2xl px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 py-[1.5rem] flex flex-col gap-5 lg:gap-10 shadow-lg">
-            <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#000000cc] hover:text-[#000000] transition delay-[45ms]">
+            <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#475467] hover:text-[#000000cc] transition delay-[45ms]">
               Phương pháp 2 của James Clear và thói quen nguyên tử
             </h1>
             <p className="text-sm lg:text-base xl:text-lg text-[#475467]">
@@ -74,7 +74,7 @@ export default function Blog() {
               <img
                 className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w1000/2022/12/livewire-and-recaptcha-v3.jpg"
-                alt="image"
+                alt="image" loading="lazy"
               />
             </div>
             <div className="px-1 flex flex-col gap-3">
@@ -98,7 +98,7 @@ export default function Blog() {
               <img
                 className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w2000/2023/01/TALL.jpg"
-                alt="image"
+                alt="image" loading="lazy"
               />
             </div>
             <div className="px-1 flex flex-col gap-3">
@@ -122,7 +122,7 @@ export default function Blog() {
               <img
                 className={`h-full w-full ${styles["zoom-on-hover"]} rounded-2xl`}
                 src="https://blog.laravelvietnam.org/content/images/size/w1000/2022/12/laravel-10.jpg"
-                alt="image"
+                alt="image" loading="lazy"
               />
             </div>
             <div className="px-1 flex flex-col gap-3">
@@ -144,7 +144,7 @@ export default function Blog() {
         </div>
       </div>
       <div className="full-width-container h-[410px] bg-[#e1e5ea] px-[50px] lg:px-[280px] md:px-[180px] sm:px-[80px] xs:px-[30px] py-[80px] mt-10 relative">
-        <img className="w-full h-full" src="https://wallpaperaccess.com/full/14736.jpg" alt="image" />
+        <img className="w-full h-full" src="https://wallpaperaccess.com/full/14736.jpg" alt="image" loading="lazy" />
         <div className="absolute bottom-4 right-4 bg-white p-1 rounded shadow-md text-xs">
           <span>Liên hệ quảng cáo: </span>
           <a href="mailto:quangvh.technical@gmail.com" className="text-blue-600">quangvh.technical@gmail.com</a>
