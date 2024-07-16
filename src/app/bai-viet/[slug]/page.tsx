@@ -25,7 +25,7 @@ const fetchPostData = async (slug: string): Promise<Post> => {
     category: 'Thể thao',
     createdAt: '10 ngày trước',
     readingTime: '5 phút đọc',
-    fullContent: 'Sau khi buổi lễ trao tặng kết thúc, Mbappé đã đi dạo quanh sân Santiago Bernabéu để đáp lại tình cảm của người hâm mộ đã đến sân vận động. Người hâm mộ Madrid đã hô vang tên anh ấy và lần đầu tiên chứng kiến ​​người hùng mới của họ khi anh ấy đá bóng vào đám đông.',
+    fullContent: 'Sau khi buổi lễ trao tặng kết thúc, Mbappé đã đi dạo quanh sân Santiago Bernabéu để đáp lại tình cảm của người hâm mộ đã đến sân vận động. <p>Người hâm mộ Madrid đã hô vang tên anh ấy và lần đầu tiên chứng kiến ​​người hùng mới của họ khi anh ấy đá bóng vào đám đông.</p>',
   };
 };
 
@@ -53,23 +53,18 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
       <p className="mb-5 text-lg md:text-xl text-gray-600">{post.shortContent}</p>
       <img className="w-full mb-5 rounded-lg" src={post.imageUrl} alt={post.title} loading="lazy" />
       <div className="mb-5 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+        <div className="flex justify-between gap-2 items-center xl:flex">
           <Image
             height={26}
             width={26}
             className="rounded-full"
-            src={post.authorAvatar}
+            src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png"
             alt="avatar"
-            loading="lazy"
           />
-          <div className="text-[10px] lg:text-[12px] xl:text-[14px] text-[#475467] line-clamp-2">
-          {post.author}
-          </div>
+          <span className="text-[#292929] text-[10px] lg:text-sm xl:text-sm">Vũ Huy Quang</span>
         </div>
-        <div className="flex justify-start gap-5 text-[#979797] items-center text-[7px] lg:text-[8px] xl:text-[10px]">
-          <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">
-            {post.category}
-          </span>
+        <div className="flex justify-between gap-5 text-[#979797] items-center text-[10px] lg:text-sm xl:text-sm">
+          <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">{post.category}</span>
           <span>{post.createdAt}</span>
           <span>{post.readingTime}</span>
         </div>
