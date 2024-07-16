@@ -42,7 +42,7 @@ export default function Blog() {
             />
           </div>
           <div className="w-full lg:w-5/12 rounded-r-lg lg:rounded-r-2xl px-3 sm:px-3 md:px-4 lg:px-6 xl:px-6 py-[1.5rem] flex flex-col gap-5 lg:gap-10 shadow-lg">
-            <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#000000cc] hover:text-[#000000] transition delay-[45ms]">
+            <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-[#475467] hover:text-[#000000cc] transition delay-[45ms]">
               Phương pháp 2 của James Clear và thói quen nguyên tử
             </h1>
             <p className="text-sm lg:text-base xl:text-lg text-[#475467]">
