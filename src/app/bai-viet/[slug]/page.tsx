@@ -2,8 +2,11 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import DOMPurify from 'dompurify';
+import { posts } from '@/data/mockData';
 
 interface Post {
+  slug: string;
   title: string;
   shortContent: string;
   imageUrl: string;
@@ -15,21 +18,11 @@ interface Post {
   fullContent: string;
 }
 
-const fetchPostData = async (slug: string): Promise<Post> => {
-  return {
-    title: 'Người hâm mộ Madrid vui mừng chào đón Mbappé',
-    shortContent: 'Cầu thủ mới của Real Madrid bày tỏ lòng biết ơn tới người hâm mộ đã đến sân vận động.',
-    imageUrl: 'https://publish-p47754-e237306.adobeaemcloud.com/adobe/dynamicmedia/deliver/dm-aid--f5013a7a-abe5-46a2-b92d-1def14470b69/ND_MADRIDISMO_CON_MBAPPE_01_1PC9302.app.png?preferwebp=true&width=1440',
-    author: 'Vũ Huy Quang',
-    authorAvatar: 'https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png',
-    category: 'Thể thao',
-    createdAt: '10 ngày trước',
-    readingTime: '5 phút đọc',
-    fullContent: 'Sau khi buổi lễ trao tặng kết thúc, Mbappé đã đi dạo quanh sân Santiago Bernabéu để đáp lại tình cảm của người hâm mộ đã đến sân vận động. <p>Người hâm mộ Madrid đã hô vang tên anh ấy và lần đầu tiên chứng kiến ​​người hùng mới của họ khi anh ấy đá bóng vào đám đông.</p>',
-  };
+const fetchPostData = async (slug: string): Promise<Post | null> => {
+  return posts.find(post => post.slug === slug) || null;
 };
 
-const PostDetail = ({ params }: { params: { slug: string } }) => {
+export default function PostDetail({ params }: { params: { slug: string } }) {
   const { slug } = params;
   const [post, setPost] = useState<Post | null>(null);
 
@@ -45,6 +38,8 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
     return <div>Loading...</div>;
   }
 
+  const sanitizedContent = DOMPurify.sanitize(post.fullContent);
+
   return (
     <div className="max-w-3xl mx-auto p-5">
       <h1 className="mb-5 text-3xl md:text-4xl font-bold tracking-tight text-gray-800 hover:text-gray-900 transition duration-300 cursor-pointer">
@@ -58,10 +53,10 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
             height={26}
             width={26}
             className="rounded-full"
-            src="https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png"
+            src={post.authorAvatar}
             alt="avatar"
           />
-          <span className="text-[#292929] text-[10px] lg:text-sm xl:text-sm">Vũ Huy Quang</span>
+          <span className="text-[#292929] text-[10px] lg:text-sm xl:text-sm">{post.author}</span>
         </div>
         <div className="flex justify-between gap-5 text-[#979797] items-center text-[10px] lg:text-sm xl:text-sm">
           <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">{post.category}</span>
@@ -69,9 +64,7 @@ const PostDetail = ({ params }: { params: { slug: string } }) => {
           <span>{post.readingTime}</span>
         </div>
       </div>
-      <div className="text-gray-700 mb-5 text-lg leading-relaxed">{post.fullContent}</div>
+      <div className="text-gray-700 mb-5 text-lg leading-relaxed" style={{ lineHeight: '1.75' }} dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
     </div>
   );
 };
-
-export default PostDetail;
