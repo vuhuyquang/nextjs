@@ -28,9 +28,9 @@ export default function Home() {
               blogger, và là Founder của <span className="bg-[#fdcb6e]">Quag</span>
             </h2>
             <p className="content-intro text-base md:text-lg">
-              Chào mọi người, mình là Vũ Huy Quang, một lập trình viên giàu kinh
-              nghiệm. Mình là Frontend & Backend Developer và Automation Tester,
-              thành thạo Laravel, Vue.js, Spring Boot, và React.js. Sự đa dạng
+              Chào mọi người, mình là Vũ Huy Quang, một lập trình viên với kinh
+              nghiệm đa lĩnh vực. Mình là Frontend & Backend Developer và Automation Tester,
+              thành thạo Laravel, Vue.js, Spring Boot, React.js và cả Robot Framework. Sự đa dạng
               trong công nghệ giúp mình làm việc linh hoạt và hiệu quả trong
               các dự án phức tạp.
             </p>
