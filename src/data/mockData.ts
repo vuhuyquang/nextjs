@@ -1,5 +1,17 @@
 export const posts = [
     {
+      slug: 'laravel-tinh-yeu-thang-hoa-qua-thoi-gian',
+      title: 'Laravel - Tình yêu trưởng thành qua thời gian',
+      shortContent: 'Khám phá hành trình của Taylor Otwell và người vợ từ những ngày đầu giản dị đến thành công rực rỡ bên chiếc Lamborghini. Một câu chuyện về tình yêu, sự đồng hành và đam mê thay đổi cả thế giới.',
+      imageUrl: 'https://paintbytext.chat/_next/image?url=https%3A%2F%2Freplicate.delivery%2Fyhqm%2FRxZeAuEllAUrJaaxsiOnS2Js45vseeqEvzG0rj7L3PUWGenMB%2Fout-0.png&w=640&q=75',
+      author: 'Vũ Huy Quang',
+      authorAvatar: 'https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png',
+      category: 'Công nghệ',
+      createdAt: '1 ngày trước',
+      readingTime: '9 phút đọc',
+      fullContent: '<p>Trong một bức ảnh đầy ấn tượng và sâu lắng, chúng ta nhìn thấy hình ảnh của đôi vợ chồng Taylor Otwell – người đã mang đến cho chúng ta Laravel. Bức ảnh là minh chứng cho tình yêu và sự kiên trì vượt thời gian, không chỉ trong cuộc sống gia đình mà còn trong cả sự nghiệp và đam mê của họ.</p><div style="display: flex; justify-content: center; gap: 20px; margin: 20px 0;"><img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/449446289_2923624097777909_4596269592161980677_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=y1td7lv7DoIQ7kNvgHcjWjt&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAsxEt2jzegcSaadzuWh8YUWlojS5rD4Cv-94EYY1S1ow&oe=669FF391" alt="Taylor and his wife 15 years ago" style="max-width: 100%; height: auto; border-radius: 10px;"><img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/451835446_2923623757777943_4071515681842029259_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aa7b47&_nc_ohc=PGk47ro0nVAQ7kNvgHsc3qg&_nc_ht=scontent.fhan14-1.fna&oh=00_AYC8l79a8KsE1nxJWGGqz3iCZbz_yt3fwikjouQvKkEamg&oe=66A01545" alt="Taylor and his wife with their Lamborghini" style="max-width: 100%; height: auto; border-radius: 10px;"></div><p>Ở bên trái là hình ảnh của họ khi mới cưới nhau 15 năm trước, khi tình yêu còn non trẻ và tràn đầy những mộng mơ về tương lai. Taylor khi ấy còn là một lập trình viên .NET, chưa từng bước vào con đường của PHP và Laravel. Họ cùng nhau chia sẻ những khoảnh khắc ngọt ngào, đầy nhiệt huyết và hi vọng. Đôi mắt sáng ngời của họ thể hiện niềm tin vào một tương lai tươi đẹp, nơi họ sẽ cùng nhau xây dựng và phát triển.</p><p>Bên phải là hình ảnh của họ sau hơn một thập kỷ, khi Laravel đã trở thành một hiện tượng, một nền tảng mạnh mẽ trong thế giới công nghệ. Họ đứng bên chiếc Lamborghini lộng lẫy – biểu tượng của thành công và sự thăng hoa trong sự nghiệp. Nhưng sâu thẳm trong ánh mắt và nụ cười của họ, ta vẫn thấy tình yêu mặn nồng, sự đồng hành và những ký ức đã cùng nhau trải qua.</p><p>Taylor, từ một lập trình viên .NET, đã dũng cảm bước ra khỏi vùng an toàn của mình, chuyển hướng sang PHP và tạo nên Laravel – một framework thay đổi cả thế giới lập trình. Laravel không chỉ mang lại thành công và danh tiếng cho Taylor, mà còn là minh chứng cho tình yêu và sự ủng hộ không ngừng từ người bạn đời của anh.</p><p>Trong suốt hành trình ấy, tình yêu của họ không chỉ dành cho nhau mà còn lan tỏa đến cộng đồng lập trình viên trên toàn thế giới. Laravel không chỉ là công cụ mà còn là cầu nối, là niềm cảm hứng cho biết bao nhiêu người theo đuổi đam mê công nghệ.</p><p>Có lẽ, chính tình yêu, sự đồng hành và niềm đam mê đã giúp Taylor và vợ ngày càng đẹp hơn, giàu hơn và hạnh phúc hơn. Laravel không chỉ là một framework mà còn là câu chuyện tình yêu trưởng thành, là minh chứng cho việc tình yêu và đam mê có thể thay đổi cả thế giới.</p><p>Trong cuộc sống, khi chúng ta có tình yêu và đam mê, mọi thứ đều trở nên có ý nghĩa và tràn đầy hy vọng. Câu chuyện của Taylor và vợ là minh chứng sống động cho điều đó – một câu chuyện tình yêu đầy lãng mạn, trưởng thành qua năm tháng, và luôn tràn đầy những điều kỳ diệu.</p>',
+    },
+    {
       slug: 'nguoi-ham-mo-madrid-vui-mung-chao-don-mbappe',
       title: 'Người hâm mộ Madrid vui mừng chào đón Mbappé',
       shortContent: 'Cầu thủ mới của Real Madrid bày tỏ lòng biết ơn tới người hâm mộ đã đến sân vận động.',
@@ -8,7 +20,7 @@ export const posts = [
       authorAvatar: 'https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png',
       category: 'Thể thao',
       createdAt: '10 ngày trước',
-      readingTime: '5 phút đọc',
+      readingTime: '1 phút đọc',
       fullContent: 'Sau khi buổi lễ trao tặng kết thúc, Mbappé đã đi dạo quanh sân Santiago Bernabéu để đáp lại tình cảm của người hâm mộ đã đến sân vận động. <p>Người hâm mộ Madrid đã hô vang tên anh ấy và lần đầu tiên chứng kiến ​​người hùng mới của họ khi anh ấy đá bóng vào đám đông.</p>',
     },
     {
