@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import DOMPurify from 'dompurify';
 import { posts } from '@/data/mockData';
+import { formatDate } from '@/utils/formatDate';
 
 interface Post {
   slug: string;
@@ -60,7 +61,7 @@ export default function PostDetail({ params }: { params: { slug: string } }) {
         </div>
         <div className="flex items-center gap-5 text-[#979797] text-[10px] lg:text-sm xl:text-sm flex-wrap">
           <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex items-center">{post.category}</span>
-          <span>{post.createdAt}</span>
+          <span>{formatDate(post.createdAt)}</span>
           <span>{post.readingTime}</span>
         </div>
       </div>

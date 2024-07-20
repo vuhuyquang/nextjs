@@ -4,7 +4,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/bai-viet.module.scss";
-import { posts } from "@/data/mockData";  // Assuming you import the mock data from a separate file
+import { posts } from "@/data/mockData";
+import { formatDate } from "@/utils/formatDate";
 
 export default function Blog() {
   return (
@@ -40,7 +41,7 @@ export default function Blog() {
                   </div>
                   <div className="flex justify-between gap-5 text-[#979797] items-center text-[10px] lg:text-sm xl:text-sm">
                     <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">{post.category}</span>
-                    <span>{post.createdAt}</span>
+                    <span>{formatDate(post.createdAt)}</span>
                     <span>{post.readingTime}</span>
                   </div>
                 </div>
@@ -69,7 +70,7 @@ export default function Blog() {
                   </div>
                   <div className="flex justify-start gap-5 text-[#979797] items-center text-[7px] lg:text-[8px] xl:text-[10px]">
                     <span className="rounded-full bg-[#f2f2f2] px-2 py-1 flex justify-between items-center">{post.category}</span>
-                    <span>{post.createdAt}</span>
+                    <span>{formatDate(post.createdAt)}</span>
                     <span>{post.readingTime}</span>
                   </div>
                 </div>
