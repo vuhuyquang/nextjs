@@ -13,7 +13,7 @@ export const posts = [
   },
   {
     slug: 'toi-uu-hoa-thoi-gian-cooldown-trong-game-hyper-casual-mot-giai-phap-toan-hoc-djon-gian-va-hieu-qua',
-    title: 'Tối Ưu Hóa Thời Gian Cooldown Trong Game Hyper-Casual: Một Giải Pháp Toán Học Đơn Giản và Hiệu Quả',
+    title: 'Tối ưu hóa thời gian cooldown trong game Hyper-Casual: Một giải pháp toán học đơn giản và hiệu quả',
     shortContent: 'Trong game hyper-casual, hệ thống combo thường thưởng cho người chơi khi họ đạt điểm số liên tiếp trong một khoảng thời gian nhất định. Để giữ cho trò chơi thú vị và không quá khó khăn, việc thiết lập thời gian cooldown là rất quan trọng.',
     imageUrl: 'https://i.pinimg.com/564x/6d/b3/eb/6db3eb80ec0ef152da034401a2d3ad12.jpg',
     author: 'Vũ Huy Quang',

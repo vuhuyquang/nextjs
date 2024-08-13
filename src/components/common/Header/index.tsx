@@ -61,7 +61,7 @@ export default function Header() {
                   </div>
                   <div className="flex gap-1">
                     <HeartFilled />
-                    <p>Độc thân</p>
+                    <p>Đang hẹn hò</p>
                   </div>
                 </div>
               }
