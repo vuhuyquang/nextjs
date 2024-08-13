@@ -90,6 +90,9 @@ export default function Header() {
                 <Link href="/bai-viet">BÀI VIẾT</Link>
               </li>
               <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
+                <Link href="/khoa-hoc">KHOÁ HỌC</Link>
+              </li>
+              <li className="hover:text-[#fdcb6e] transition delay-[45ms]">
                 <Link href="/lien-he">LIÊN HỆ</Link>
               </li>
             </ul>
@@ -108,6 +111,9 @@ export default function Header() {
           </li>
           <li className="py-2">
             <Link href="/bai-viet" onClick={onClose}>BÀI VIẾT</Link>
+          </li>
+          <li className="py-2">
+            <Link href="/khoa-hoc" onClick={onClose}>KHOÁ HỌC</Link>
           </li>
           <li className="py-2">
             <Link href="/lien-he" onClick={onClose}>LIÊN HỆ</Link>

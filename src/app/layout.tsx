@@ -7,7 +7,7 @@ import Footer from "@/components/common/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Nice to meet you :vv",
+  title: "Blog của Quag :vv",
   description: "Đây là blog cá nhân của tui, nơi chia sẻ về cuộc sống, công nghệ và những điều thú vị.",
 };
 
@@ -23,7 +23,7 @@ export default function RootLayout({
         <main className="container mx-auto w-screen max-w-full pt-[76px]">
           {children}
         </main>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </body>
     </html>
   );

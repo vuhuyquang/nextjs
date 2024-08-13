@@ -1,12 +1,10 @@
 'use client';
 
 import { Button, Form, Input } from 'antd';
-import { useEffect } from 'react';
 
 const { TextArea } = Input;
 
-const Contact = () => {
-  // Function to scroll to the map section
+export default function Contact() {
   const scrollToMap = () => {
     const mapSection = document.getElementById('map-section');
     if (mapSection) {
@@ -93,5 +91,3 @@ const Contact = () => {
     </div>
   );
 };
-
-export default Contact;
