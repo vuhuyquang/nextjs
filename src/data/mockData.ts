@@ -2,7 +2,7 @@ export const posts = [
   {
     slug: 'lam-sao-dje-day-som-moi-ngay-va-hoc-tap-hieu-qua',
     title: 'Làm Sao Để Dậy Sớm Mỗi Ngày Và Học Tập Hiệu Quả?',
-    shortContent: 'Làm Sao Để Dậy Sớm Mỗi Ngày Và Học Tập Hiệu Quả?',
+    shortContent: 'Dậy sớm là một thói quen nhiều người muốn hình thành nhưng không dễ thực hiện. Cảm giác buồn ngủ sau khi ăn do cơ thể ưu tiên máu để tiêu hóa và sản xuất melatonin khi trời tối có thể gây mệt mỏi. Ánh sáng tự nhiên và kích thích giác quan như đọc báo, nhắn tin giúp bạn tỉnh táo hơn vào buổi sáng. Áp dụng quy tắc 2 phút để thức dậy và duy trì tỉnh táo, kết hợp vận động buổi sáng, giúp tăng oxy lên não, kích hoạt endorphin, và sẵn sàng cho ngày mới hiệu quả.',
     imageUrl: 'https://tse4.mm.bing.net/th?id=OIP.0w_aaLp16l0lQb0tatUXMAHaEo&pid=Api&P=0&h=220',
     author: 'Vũ Huy Quang',
     authorAvatar: 'https://files.fullstack.edu.vn/f8-prod/user_avatars/18810/631175d26916f.png',
