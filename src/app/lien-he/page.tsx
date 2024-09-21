@@ -31,10 +31,9 @@ export default function Contact() {
       </div>
 
       {/* Phần liên hệ */}
-      <div className="container mx-auto px-4 py-8 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
-          {/* Thông tin liên hệ */}
-          <div className="col-span-1 md:col-span-3 bg-white p-6 rounded-lg shadow-lg">
+      <div className="container mx-auto px-4 py-8 md:px-8 text-black">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 w-full">
+          <div className="col-span-1 md:col-span-12 bg-white p-6 rounded-lg shadow-lg">
             <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-700">Thông tin liên hệ</h2>
             <p className="mb-2 text-gray-600">Địa chỉ: Đường Đỗ Đức Dục, TP. Hà Nội</p>
             <p className="mb-2 text-gray-600">Số điện thoại: 0344-396-798</p>
@@ -49,8 +48,7 @@ export default function Contact() {
             </Button>
           </div>
 
-          {/* Form nhập */}
-          <div className="col-span-1 md:col-span-9">
+          <div className="col-span-1 md:col-span-12">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h2 className="text-xl md:text-2xl font-bold mb-4 text-gray-700">Form liên hệ</h2>
               <Form layout="vertical" onFinish={handleFormSubmit}>

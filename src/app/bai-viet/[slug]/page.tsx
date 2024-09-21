@@ -30,6 +30,8 @@ export default function PostDetail({ params }: { params: { slug: string } }) {
   useEffect(() => {
     const getPost = async () => {
       const postData = await fetchPostData(slug);
+      console.log(123, postData);
+      
       setPost(postData);
     };
     getPost();
@@ -65,7 +67,7 @@ export default function PostDetail({ params }: { params: { slug: string } }) {
           <span>{post.readingTime}</span>
         </div>
       </div>
-      <div className="text-gray-700 mb-5 text-lg leading-relaxed">
+      <div className="text-gray-700 mb-5 text-lg leading-relaxed text-justify">
         <div dangerouslySetInnerHTML={{ __html: sanitizedContent }} />
       </div>
     </div>
