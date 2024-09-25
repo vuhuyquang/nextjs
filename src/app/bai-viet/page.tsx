@@ -62,7 +62,7 @@ export default function Blog() {
                   />
                 </div>
                 <div className="px-1 flex flex-col gap-3">
-                  <div className="text-sm lg:text-base xl:text-lg font-bold text-[#475467] hover:text-[#000000cc] transition delay-[45ms]">
+                  <div className="text-sm lg:text-base xl:text-lg font-bold text-[#475467] hover:text-[#000000cc] transition delay-[45ms] line-clamp-3">
                     {post.title}
                   </div>
                   <div className="text-[10px] lg:text-[12px] xl:text-[14px] text-[#475467] line-clamp-2">
