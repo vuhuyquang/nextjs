@@ -30,7 +30,6 @@ export default function PostDetail({ params }: { params: { slug: string } }) {
   useEffect(() => {
     const getPost = async () => {
       const postData = await fetchPostData(slug);
-      console.log(123, postData);
       
       setPost(postData);
     };
